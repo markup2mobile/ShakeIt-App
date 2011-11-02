@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+	<title>See what you can do on iPhone with HTML5 ShakeIt App</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+	<meta name="title" content="ShakeIt is a mobile web application designed to demonstrate possibilities of HTML5, CSS3 and jQuery Mobile. It uses Canvas, DeviceOrientation API, App Cache for offline mode, touch-events handling and transition effects." />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta property="og:title" content="See what you can do on iPhone with HTML5 ShakeIt App" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://shakeit.mobi" />
+	<meta property="og:image" content="http://shakeit.mobi/shaker/images/intro.jpg" />
+	<meta property="og:site_name" content="HTML5 Shake It App" />
+	<meta property="fb:admins" content="100000442530778" />
+	<meta property="og:description" content="ShakeIt is a mobile web application designed to demonstrate possibilities of HTML5, CSS3 and jQuery Mobile. It uses Canvas, DeviceOrientation API, App Cache for offline mode, touch-events handling and transition effects."/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0rc1.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.0rc1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slideCarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=176624525745151";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<section data-role="page" id="intro">
+		<h1>SHAKE IT</h1>
+		<img src="images/intro.jpg" alt="illustration" />
+		<a href="#choose">TRY IT</a>
+	</section>
+	<!-- choose page -->
+	<section data-role="page" id="choose">
+		<h1><a href="#shake" id="choose-link">CHOOSE <span>A COCKTAIL</span></a></h1>
+		<div class="slider">
+			<div class="slider-inner">
+				<div>
+					<h2>POMEGRANATE MARTINI</h2>
+					<a href="#shake" rel="#pomegranate"><img src="images/pomegranate-martini.png" alt="Pomegranate martini" /></a>
+				</div>
+				<div>
+					<h2>KIWI<br />DAIQUIRI</h2>
+					<a href="#shake" rel="#kiwi"><img src="images/kiwi-daiquiri.png" alt="Kiwi Daiquiri" /></a>
+				</div>
+				<div>
+					<h2>COSMOPOLITAIN</h2>
+					<a href="#shake" rel="#cosmopolitan"><img src="images/cosmopolitain.png" alt="Cosmopolitain" /></a>
+				</div>
+				<div>
+					<h2>PINEAPPLE<br />PALM</h2>
+					<a href="#shake" rel="#pineapple"><img src="images/pineapple-palm.png" alt="Pineapple Palm" /></a>
+				</div>
+			</div>
+			<a class="btn-prev" href="#">previous</a>
+			<a class="btn-next" href="#">next</a>
+		</div>
+	</section>
+	<!-- shake page -->
+	<section data-role="page" id="shake">
+		<div>
+			<h1>SHAKE IT!</h1>
+			<canvas id="shaker" width="320" height="300">Your browser doesn't support canvas</canvas>
+			<span class="percentage">0%</span>
+		</div>
+	</section>
+	<!-- pomegranate page -->
+	<section data-role="page" class="result" id="pomegranate">
+		<div>
+			<header>
+				<h1>SHAKE IT</h1>
+				<h2>POMEGRANATE MARTINI</h2>
+				<div class="facebook-like">
+					<div class="fb-like" data-href="http://shakeit.mobi/" data-send="false" data-width="160" data-show-faces="false" data-ref="ShakeIt App"></div>
+				</div>
+			</header>
+			<section class="content">
+				<ul>
+					<li>2 oz citrus vodka</li>
+					<li>1/2 oz fresh lemon juice</li>
+					<li>1/4 oz fresh pomegranate juice</li>
+					<li>1 oz simple syrup</li>
+				</ul>
+				<p>Shake all ingredients well with ice and strain into a chilled martini glass. Add a dash of rose water if available.
+				Garnish with flamed orange peel, and serve.</p>
+				<p><a href="#choose">Choose another cocktail</a></p>
+			</section>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
+				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
+				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
+			</a>
+		</footer>
+	</section>
+	<!-- cosmopolitan page -->
+	<section data-role="page" class="result" id="cosmopolitan">
+		<div>
+			<header>
+				<h1>SHAKE IT</h1>
+				<h2>COSMOPOLITAN</h2>
+				<div class="facebook-like">
+					<div class="fb-like" data-href="http://shakeit.mobi/" data-send="false" data-width="160" data-show-faces="false" data-ref="ShakeIt App"></div>
+				</div>
+			</header>
+			<section class="content">
+				<ul>
+					<li>1 oz vodka</li>
+					<li>1/2 oz triple sec</li>
+					<li>1/2 oz roses lime juice</li>
+					<li>1/2 oz cranberry juice</li>
+				</ul>
+				<p>Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice.
+				Strain into a martini glass, garnish with a lime wedge on the rim, and serve.</p>
+				<p><a href="#choose">Choose another cocktail</a></p>
+			</section>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
+				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
+				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
+			</a>
+		</footer>
+	</section>
+	<!-- pineapple page -->
+	<section data-role="page" class="result" id="pineapple">
+		<div>
+			<header>
+				<h1>SHAKE IT</h1>
+				<h2>PINEAPPLE PALM</h2>
+				<div class="facebook-like">
+					<div class="fb-like" data-href="http://shakeit.mobi/" data-send="false" data-width="160" data-show-faces="false" data-ref="ShakeIt App"></div>
+				</div>
+			</header>
+			<section class="content">
+				<ul>
+					<li>1.5 oz SKYY infusions pineapple</li>
+					<li>1 oz fresh lime Juice</li>
+					<li>1/4-1/2 oz simple syrup</li>
+					<li>3 basil leaves</li>
+				</ul>
+				<p>Muddle, shake and strain into a chilled martini glass. Garnish with pineapple</p>
+				<p><a href="#choose">Choose another cocktail</a></p>
+			</section>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
+				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
+				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
+			</a>
+		</footer>
+	</section>
+	<!-- kiwi page -->
+	<section data-role="page" class="result" id="kiwi">
+		<div>
+			<header>
+				<h1>SHAKE IT</h1>
+				<h2>KIWI DAIQUIRI</h2>
+				<div class="facebook-like">
+					<div class="fb-like" data-href="http://shakeit.mobi/" data-send="false" data-width="160" data-show-faces="false" data-ref="ShakeIt App"></div>
+				</div>
+			</header>
+			<section class="content">
+				<ul>
+					<li>1 lime wedge</li>
+					<li>2 tsp caster sugar</li>
+					<li>1.5 oz white rum</li>
+					<li>1 tbsp lime juice</li>
+					<li>1 kiwi, peeled and roughly chopped</li>
+				</ul>
+				<p>Rub the rim of a martini glass with the lime wedge.
+				Put the sugar in a saucer and dip in the rim of the glass.
+				Blend the other ingredients with a handful of ice for 40 seconds until smooth.
+				Pour into the glass and garnish with a slice of kiwi.</p>
+				<p><a href="#choose">Choose another cocktail</a></p>
+			</section>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
+				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
+				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
+			</a>
+		</footer>
+	</section>
+</body>
+</html>

@@ -1,0 +1,238 @@
+﻿@font-face{
+	font-family:"Insolent";
+	src:url("../fonts/insolent.eot");
+	src:url("../fonts/insolent.eot?#iefix") format("embedded-opentype"), url("../fonts/insolent.woff") format("woff"), url("../fonts/insolent.ttf") format("truetype"), url("../fonts/insolent.svg#wf") format("svg");
+}
+body{
+	margin:0;
+}
+#intro{
+	background:url(../images/intro-repeat.jpg) repeat-x 50% 0;
+	overflow:hidden;
+	position:relative;
+}
+#intro h1{
+	width:100%;
+	font:36px/56px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#intro img{
+	display:block;
+	margin:0 auto;
+}
+#intro a{
+	font:24px/28px "Insolent", Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-shadow:none;
+	border-top:3px solid #000;
+	border-bottom:3px solid #000;
+	position:absolute;
+	top:150px;
+	left:50%;
+	padding:5px 0 0;
+	margin:0 0 0 40px;
+}
+#choose{
+	background-image:url(../images/bg.gif);
+	background-size:6px 6px;
+	position:relative;
+}
+#choose h1{
+	width:100%;
+	font:50px/50px "Insolent", Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	top:276px;
+	left:0;
+	z-index:2;
+}
+#choose h1 a{
+	display:inline-block;
+	color:#ee3f50;
+	text-decoration:none;
+	text-shadow:none;
+}
+#choose h1 span{
+	display:block;
+	font:25px/25px "Insolent", Arial, Helvetica, sans-serif;
+}
+.slider{
+	background-image:-webkit-gradient(radial, 50% 40%, 0, 50% 40%, 200, from(rgba(255, 255, 255, 0.7)), color-stop(30%, rgba(255, 255, 255, 0.4)), to(transparent));
+	position:relative;
+}
+.slider-inner{
+	overflow:hidden;
+	position:relative;
+}
+.slider-inner > div{
+	min-height:480px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+}
+.slider h2{
+	width:100%;
+	font:28px/28px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	top:10px;
+	left:0;
+}
+.slider img{
+	display:block;
+	margin:56px auto 0;
+}
+.slider .btn-prev{
+	width:15px;
+	height:30px;
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	top:160px;
+	left:45px;
+}
+.slider .btn-prev:after{
+	content:"";
+	background:#fff;
+	width:20px;
+	height:20px;
+	display:block;
+	-webkit-transform:rotate(45deg);
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+.slider .btn-next{
+	width:15px;
+	height:30px;
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	top:160px;
+	right:45px;
+}
+.slider .btn-next:after{
+	content:"";
+	background:#fff;
+	width:20px;
+	height:20px;
+	display:block;
+	-webkit-transform:rotate(45deg);
+	position:absolute;
+	top:5px;
+	left:-10px;
+}
+.result{
+	background:url(../images/bg.gif);
+	position:relative;
+}
+.result > div:first-child{
+	background-image:-webkit-gradient(radial, 50% 150, 0, 50% 150, 200, from(rgba(255, 255, 255, 0.5)), color-stop(30%, rgba(255, 255, 255, 0.25)), to(transparent));
+	padding:12px;
+}
+.result header{
+	background:url(../images/logo-shaker.png) no-repeat 100% 0;
+	min-height:145px;
+	overflow:hidden;
+	padding:0 140px 0 0;
+}
+.result h1{
+	font:28px/28px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	margin:20px 0 0;
+}
+.result h2{
+	font:14px/14px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	margin:10px 0 0;
+}
+.result .facebook-like{
+	overflow:hidden;
+	margin:10px 0 0;
+}
+.content{
+	font:14px/18px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+}
+.content ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.content ul li{
+	border-top:2px solid #3f4044;
+	padding:3px 0;
+}
+.content ul li:first-child{border-top-style:none;}
+.result footer{
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2e2e2e), color-stop(1, #070707));
+	border-top:2px solid #d5d5d5;
+}
+.result footer > a{
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	padding:12px;
+}
+.result footer > a img{
+	float:left;
+	border:1px solid #2e3450;
+	margin:0 12px 0 0;
+}
+.result footer > a strong{
+	display:block;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#42f583;
+	text-shadow:none;
+	margin:0;
+}
+.result footer > a span{
+	display:block;
+	font:10px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+}
+#shake{
+	background:url(../images/bg.gif);
+	text-align:center;
+}
+#shake > div:first-child{
+	background-image:-webkit-gradient(radial, 50% 40%, 0, 50% 40%, 200, from(rgba(255, 255, 255, 0.7)), color-stop(30%, rgba(255, 255, 255, 0.4)), to(transparent));
+}
+#shake h1{
+	font:20px/20px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	text-align:center;
+	margin:8px 0 0;
+}
+.shaker{
+	width:320px;
+	height:300px;
+	display:block;
+	margin:0 auto;
+}
+.percentage{
+	font:20px/28px "Insolent", Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	display:block;
+	text-align:center;
+}
+.shaker-holder{
+	display:inline-block;
+}
