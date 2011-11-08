@@ -4,6 +4,11 @@ var audioPlayer = new Audio(),
 	percentage = 0,
 	_shakeTimer = null;
 
+$('#intro').live('pagecreate', function(){
+	if (!Modernizr.hasEvent('devicemotion', window)){
+		$('#intro .message').css('display', 'block');
+	}
+});
 $('#choose').live('pagecreate', function(){
 	audioPlayer.src="audio/shake.mp3";
 	audioPlayer.load();
@@ -23,6 +28,12 @@ $('#choose').live('pagecreate', function(){
 });
 
 $('#shake').live('pageshow', function(){
+	if (Modernizr.hasEvent('devicemotion', window)){
+		$('#shake .message-nonios').css('display', 'none');
+	}
+	else{
+		$('#shake .message-ios').css('display', 'none');
+	}
 	var shaker = document.getElementById('shaker');
 	var percentageObj = $('.percentage').text('0%');
 	var context = shaker.getContext('2d');
@@ -75,6 +86,9 @@ $('#shake').live('pageshow', function(){
 			}
 		},500);
 	}
+	$('#skip').click(function(){
+		$.mobile.changePage(loadCocktail);
+	});
 });
 
 (function() {
@@ -124,8 +138,8 @@ $('#shake').live('pageshow', function(){
 				var currentTime = new Date(),
 					timeDifference = currentTime.getTime() - this.lastTime.getTime();
 				if (timeDifference > 150) {
-					this.shakeEventDidOccur();	
-					this.lastTime = new Date();		
+					this.shakeEventDidOccur();
+					this.lastTime = new Date();
 				}
 			}
 		}
@@ -542,5 +556,10 @@ function drawBackground(context){
 	context.lineTo(225, 246);
 	context.fill();
 }
-
-
+/*
+Modernizr.load({
+	test: Modernizr.geolocation,
+	yep : 'geo.js',
+	nope: 'geo-polyfill.js'
+});
+*/

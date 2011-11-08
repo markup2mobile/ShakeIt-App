@@ -39,6 +39,20 @@ body{
 	padding:5px 0 0;
 	margin:0 0 0 40px;
 }
+.message{
+	display:none;
+}
+footer p{
+	font:11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-shadow:none;
+	text-align:center;
+	padding:10px;
+	margin:0;
+}
+footer p a{
+	color:#fff;
+}
 #choose{
 	background-image:url(../images/bg.gif);
 	background-size:6px 6px;
@@ -109,6 +123,8 @@ body{
 	height:20px;
 	display:block;
 	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
 	position:absolute;
 	top:5px;
 	left:5px;
@@ -129,6 +145,8 @@ body{
 	height:20px;
 	display:block;
 	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
 	position:absolute;
 	top:5px;
 	left:-10px;
@@ -144,7 +162,6 @@ body{
 .result header{
 	background:url(../images/logo-shaker.png) no-repeat 100% 0;
 	min-height:145px;
-	overflow:hidden;
 	padding:0 140px 0 0;
 }
 .result h1{
@@ -160,7 +177,6 @@ body{
 	margin:10px 0 0;
 }
 .result .facebook-like{
-	overflow:hidden;
 	margin:10px 0 0;
 }
 .content{

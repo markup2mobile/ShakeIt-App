@@ -9,12 +9,13 @@
 	<meta property="og:title" content="See what you can do on iPhone with HTML5 ShakeIt App" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://shakeit.mobi" />
-	<meta property="og:image" content="http://shakeit.mobi/shaker/images/intro.jpg" />
+	<meta property="og:image" content="http://shakeit.mobi/images/intro.jpg" />
 	<meta property="og:site_name" content="HTML5 Shake It App" />
 	<meta property="fb:admins" content="100000442530778" />
 	<meta property="og:description" content="ShakeIt is a mobile web application designed to demonstrate possibilities of HTML5, CSS3 and jQuery Mobile. It uses Canvas, DeviceOrientation API, App Cache for offline mode, touch-events handling and transition effects."/>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0rc1.min.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.0rc1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.slideCarousel.js"></script>
@@ -33,6 +34,9 @@
 		<h1>SHAKE IT</h1>
 		<img src="images/intro.jpg" alt="illustration" />
 		<a href="#choose">TRY IT</a>
+		<footer data-role="footer" data-position="fixed" class="message">
+			<p>You can gain much better experience by using this application on iOs.</p>
+		</footer>
 	</section>
 	<!-- choose page -->
 	<section data-role="page" id="choose">
@@ -67,6 +71,10 @@
 			<canvas id="shaker" width="320" height="300">Your browser doesn't support canvas</canvas>
 			<span class="percentage">0%</span>
 		</div>
+		<footer data-role="footer" data-position="fixed">
+			<p class="message-ios">Please make sure your sound is turned on and shake your phone</p>
+			<p class="message-nonios"><a href="#" id="skip" data-role="none">Unfortunately your browser does not support DeviceOrientation API, you can skip this page by tapping on this text.</a></p>
+		</footer>
 	</section>
 	<!-- pomegranate page -->
 	<section data-role="page" class="result" id="pomegranate">
@@ -93,7 +101,7 @@
 		<footer data-role="footer" data-position="fixed">
 			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
 				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
-				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<strong>For other interesting staff see our Facebook page.</strong>
 				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
 			</a>
 		</footer>
@@ -123,7 +131,7 @@
 		<footer data-role="footer" data-position="fixed">
 			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
 				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
-				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<strong>For other interesting staff see our Facebook page.</strong>
 				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
 			</a>
 		</footer>
@@ -152,7 +160,7 @@
 		<footer data-role="footer" data-position="fixed">
 			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
 				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
-				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<strong>For other interesting staff see our Facebook page.</strong>
 				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
 			</a>
 		</footer>
@@ -185,7 +193,7 @@
 		<footer data-role="footer" data-position="fixed">
 			<a href="http://www.facebook.com/pages/Markup2Mobile/178763952198552" data-role="none">
 				<img src="images/logo-m2m.png" alt="Markup2Mobile" />
-				<strong>SEE OUR PAGE ON FACEBOOK</strong>
+				<strong>For other interesting staff see our Facebook page.</strong>
 				<span>Made by markup2mobile.com on pure HTML5 and CSS3 with jQuery Mobile integration.</span>
 			</a>
 		</footer>
